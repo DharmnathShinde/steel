@@ -35,7 +35,7 @@ li{  list-style-type: none;
 .bgimg{
   
   position: absolute;
-  width: 99%;
+  width: 100%;
   background:url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/aece5f8f6c1b54c085522a1e/zzzzmin.jpg) no-repeat ;
  background-size: cover;
  height: 150vh;
@@ -73,7 +73,7 @@ li{  list-style-type: none;
   margin-top: 60%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding-left: 6%;
+  padding-left: 12%;
   padding-right: 6%;
 }
 .bottom>div{
@@ -107,6 +107,9 @@ li{  list-style-type: none;
   grid-template-columns: 1fr 0.5fr 0.5fr 0.5fr;
   padding-top: 700px;
 }
+#images>img{
+  width: 65%;
+}
 .bg>div>h2{
   color: #ffff;
 }
@@ -117,38 +120,37 @@ li{  list-style-type: none;
   width: 60%;
   margin-left: 9%;
 }
-body > div > div:nth-child(3) > h2{
-  margin-top: 43px;
-}
-body > div > div:nth-child(2) > h2{
-  margin-top: 34px;
-}
+
 .p2bg{
   background: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/001dc0033567510e92ab23c1/2693368min1.jpg) no-repeat;
   background-size: cover;
-  height: 100vh;
+  
    display: grid;
    grid-template-columns: 1fr 1fr;
 }
 .imgesad{
   display: grid;
-  grid-template-columns:1fr 1fr ;
-  grid-template-rows:1fr 1fr ;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 2%;
+  grid-row-gap: 2%;
+  padding: 14vh;
 }
 .imgesad>img{
-  width: 40vh;
+  width: 100%;
 }
-.imgesad>.img1{ width: 81% !important;
-  height: 92%;
+.imgesad>.img1
+{ width: 100% !important;
+  height: 100%;
   grid-area: 1/1/2/3;
 }
 .imgesad>.img2{
-  width: 84%;
-  height: 86%;
+  width: 100%;
+  height: 100%;
 }
 .imgesad>.img3{
-  width: 71%;
-  height: 85%;
+  width: 100%;
+  height: 100%;
 }
 .p2bg>div>h1{
   font-family: "Poller One";
@@ -185,15 +187,10 @@ body > div > div:nth-child(2) > h2{
   width: 150px;
 }
 
-.p2bg {
-  padding: 50px;
-  display: flex;
-  justify-content: space-between;
-}
 
 .content {
-  flex: 1;
-  text-align: left;
+  padding-top: 15vh;
+  padding-left: 20vh;
 }
 
 .p2bg h1 {
@@ -205,10 +202,6 @@ body > div > div:nth-child(2) > h2{
   margin-bottom: 20px;
 }
 
-.imgesad {
-  width: 50%;
-
-}
 
 .img1 {
   width: 100%; 
@@ -225,6 +218,7 @@ margin: 6%;
 }
 .pg4grid>img{
   width:100%;
+  height: 100%;
 
 }
 .pg4grid>div>h1{
@@ -309,8 +303,162 @@ body > .pg8bg  > div:nth-child(1) > h1{
     font-weight: 500;
     margin-bottom: 0;
     color: #ffbd31;}
+    .pg9bg{
+      background: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/886e4a658b7e55af963e03e9/Untitled1.jpg) no-repeat;
+      background-size: cover;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+  }
+  .p9img{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 5%;
+    grid-row-gap: 5%;
+    padding-top: 15vh;
+    padding-right: 15vh;
+  
+  }
+  .p9img>.one{
+    grid-area: 1/1/2/3;
+    width: 100%;
+  }
+  .p9img>.two{
+    width: 100%;
+  }
+  .p9img>.three{
+    width: 100%;
+  }
+  .pg9bg>.in{
+    padding: 20vh;
+  }
+  .pg9bg>div>h3{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 7px;
+    font-weight: 400;
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    color: #2cccc4
+  }
+  .pg9bg>div>h1{
+    font-family: "Poller One";
+    font-size: 4.0625rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 16px 0 0;
+    color: #f42828
+  }
+  .pg9bg>div>p{
+    color: #ffffff;
+    margin: 36px 0 0;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .pg9bg>div>button{
+    background-image: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    letter-spacing: 3px;
+    margin: 36px auto 0 0;
+    padding: 14px 30px;
+    background-color: #f42828
+  }
 .girlimg{
   background: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/becf5363e46752c7aa4a0601/billionphotos18572711.jpg) no-repeat;
   background-size: cover;
+}
+.pag2bg>.bottom{
+ margin-top:250px !important;
+}
+@media screen and (max-width:430px)
+{
+nav>ul{
+  display: none;
+}
+.bgimg{
+  flex-direction: column;
+}
+.bottom{
+  grid-template-columns: none;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin-top: 700px;
+  grid-row-gap: 2%;
+}
+.info>h1{
+ font-size:3rem;
+}
 
+.info {
+  width: 91%;
+  padding-top: 46%;
+  padding-left: 14%;
+  padding-right: 0;
+}
+.pag2bg{
+  padding-top: 120px;
+background-position-x: right;
+}
+.pag2bg>h1{
+  font-size: 4.5rem;
+}
+.pag2bg>p{
+  width: 80%;
+}
+.pag2bg>.bottom{
+  margin-top: 76px !important;
+}
+.bg{
+  padding-top: 200px;
+  grid-template-columns: none;
+  grid-template-rows: repeat(4,1fr);
+  grid-row-gap: 2%;
+  padding-left: 10vh;
+  padding-right: 10vh;
+}
+.details{
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+#images{
+  text-align: center;
+  background-color: #111111;
+  height: 100%;
+}
+#images>img{
+  width: 24%;
+}
+.bg>div>h2{
+  font-size: 1rem;
+}
+.p2bg{
+  grid-template-columns: none;
+  grid-template-rows: 0.5 fr 1fr;
+}
+.content{
+  padding: 0;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.content>button{
+  width: 25vh !important;
+}
+.content>p{
+  font-size: 1.2rem;
+}
+.imgesad{
+  grid-template-columns: none;
+  padding: 10%;
+}
+.imgesad>.img1{
+  grid-area: 1/1/2/2;
+}
+.pg4grid{
+  grid-template-columns: none;
+  grid-template-rows: 1fr 1fr;
+
+}
 }
