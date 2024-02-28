@@ -309,8 +309,68 @@ body > .pg8bg  > div:nth-child(1) > h1{
     font-weight: 500;
     margin-bottom: 0;
     color: #ffbd31;}
+    .pg9bg{
+      background: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/886e4a658b7e55af963e03e9/Untitled1.jpg) no-repeat;
+      background-size: cover;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+  }
+  .p9img{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 5%;
+    grid-row-gap: 5%;
+    padding-top: 15vh;
+    padding-right: 15vh;
+  
+  }
+  .p9img>.one{
+    grid-area: 1/1/2/3;
+    width: 100%;
+  }
+  .p9img>.two{
+    width: 100%;
+  }
+  .p9img>.three{
+    width: 100%;
+  }
+  .pg9bg>.in{
+    padding: 20vh;
+  }
+  .pg9bg>div>h3{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 7px;
+    font-weight: 400;
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    color: #2cccc4
+  }
+  .pg9bg>div>h1{
+    font-family: "Poller One";
+    font-size: 4.0625rem;
+    line-height: 1;
+    margin: 16px 0 0;
+    color: #f42828
+  }
+  .pg9bg>div>p{
+    color: #ffffff;
+    margin: 36px 0 0;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .pg9bg>div>button{
+    background-image: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    letter-spacing: 3px;
+    margin: 36px auto 0 0;
+    padding: 14px 30px;
+    background-color: #f42828
+  }
 .girlimg{
   background: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/becf5363e46752c7aa4a0601/billionphotos18572711.jpg) no-repeat;
   background-size: cover;
-
 }
