@@ -3,7 +3,9 @@
 }
 body{
   width: 100%;
-  
+  overflow-x:hidden ;
+  margin: 0;
+  padding: 0;
   background-color: #ffff;
 }
 nav{
@@ -33,7 +35,7 @@ li{  list-style-type: none;
 .bgimg{
   
   position: absolute;
-  width: 100%;
+  width: 99%;
   background:url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/aece5f8f6c1b54c085522a1e/zzzzmin.jpg) no-repeat ;
  background-size: cover;
  height: 150vh;
@@ -130,8 +132,32 @@ body > div > div:nth-child(2) > h2{
 }
 .imgesad{
   display: grid;
-  grid-template:1fr 1fr 1fr ;
+  grid-template-columns:1fr 1fr ;
+  grid-template-rows:1fr 1fr ;
 }
+.imgesad>img{
+  width: 40vh;
+}
+.imgesad>.img1{ width: 81% !important;
+  height: 92%;
+  grid-area: 1/1/2/3;
+}
+.imgesad>.img2{
+  width: 84%;
+  height: 86%;
+}
+.imgesad>.img3{
+  width: 71%;
+  height: 85%;
+}
+.p2bg>div>h1{
+  font-family: "Poller One";
+    font-size: 3.75rem;
+    line-height: 1;
+    margin: 8px 0 0;
+    color: #ffbd31
+}
+
 .pag2bg{
   padding-top: 200px;
   position: absolute;
@@ -158,6 +184,37 @@ body > div > div:nth-child(2) > h2{
   height: 40px;
   width: 150px;
 }
+
+.p2bg {
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content {
+  flex: 1;
+  text-align: left;
+}
+
+.p2bg h1 {
+  color: #333;
+}
+
+.p2bg p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.imgesad {
+  width: 50%;
+
+}
+
+.img1 {
+  width: 100%; 
+  max-width: 100%;
+}
+
 .pg4grid{
   background-color: #ffff;
   display: grid;
