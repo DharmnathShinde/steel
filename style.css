@@ -35,7 +35,7 @@ li{  list-style-type: none;
 .bgimg{
   
   position: absolute;
-  width: 99%;
+  width: 100%;
   background:url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/aece5f8f6c1b54c085522a1e/zzzzmin.jpg) no-repeat ;
  background-size: cover;
  height: 150vh;
@@ -73,7 +73,7 @@ li{  list-style-type: none;
   margin-top: 60%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding-left: 6%;
+  padding-left: 12%;
   padding-right: 6%;
 }
 .bottom>div{
@@ -107,6 +107,9 @@ li{  list-style-type: none;
   grid-template-columns: 1fr 0.5fr 0.5fr 0.5fr;
   padding-top: 700px;
 }
+#images>img{
+  width: 65%;
+}
 .bg>div>h2{
   color: #ffff;
 }
@@ -117,12 +120,7 @@ li{  list-style-type: none;
   width: 60%;
   margin-left: 9%;
 }
-body > div > div:nth-child(3) > h2{
-  margin-top: 43px;
-}
-body > div > div:nth-child(2) > h2{
-  margin-top: 34px;
-}
+
 .p2bg{
   background: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/001dc0033567510e92ab23c1/2693368min1.jpg) no-repeat;
   background-size: cover;
@@ -220,6 +218,7 @@ margin: 6%;
 }
 .pg4grid>img{
   width:100%;
+  height: 100%;
 
 }
 .pg4grid>div>h1{
@@ -346,6 +345,7 @@ body > .pg8bg  > div:nth-child(1) > h1{
   .pg9bg>div>h1{
     font-family: "Poller One";
     font-size: 4.0625rem;
+    font-weight: 400;
     line-height: 1;
     margin: 16px 0 0;
     color: #f42828
@@ -368,4 +368,97 @@ body > .pg8bg  > div:nth-child(1) > h1{
 .girlimg{
   background: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/becf5363e46752c7aa4a0601/billionphotos18572711.jpg) no-repeat;
   background-size: cover;
+}
+.pag2bg>.bottom{
+ margin-top:250px !important;
+}
+@media screen and (max-width:430px)
+{
+nav>ul{
+  display: none;
+}
+.bgimg{
+  flex-direction: column;
+}
+.bottom{
+  grid-template-columns: none;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin-top: 700px;
+  grid-row-gap: 2%;
+}
+.info>h1{
+ font-size:3rem;
+}
+
+.info {
+  width: 91%;
+  padding-top: 46%;
+  padding-left: 14%;
+  padding-right: 0;
+}
+.pag2bg{
+  padding-top: 120px;
+background-position-x: right;
+}
+.pag2bg>h1{
+  font-size: 4.5rem;
+}
+.pag2bg>p{
+  width: 80%;
+}
+.pag2bg>.bottom{
+  margin-top: 76px !important;
+}
+.bg{
+  padding-top: 200px;
+  grid-template-columns: none;
+  grid-template-rows: repeat(4,1fr);
+  grid-row-gap: 2%;
+  padding-left: 10vh;
+  padding-right: 10vh;
+}
+.details{
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+#images{
+  text-align: center;
+  background-color: #111111;
+  height: 100%;
+}
+#images>img{
+  width: 24%;
+}
+.bg>div>h2{
+  font-size: 1rem;
+}
+.p2bg{
+  grid-template-columns: none;
+  grid-template-rows: 0.5 fr 1fr;
+}
+.content{
+  padding: 0;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.content>button{
+  width: 25vh !important;
+}
+.content>p{
+  font-size: 1.2rem;
+}
+.imgesad{
+  grid-template-columns: none;
+  padding: 10%;
+}
+.imgesad>.img1{
+  grid-area: 1/1/2/2;
+}
+.pg4grid{
+  grid-template-columns: none;
+  grid-template-rows: 1fr 1fr;
+
+}
 }
