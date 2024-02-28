@@ -458,7 +458,50 @@ background-position-x: right;
 }
 .pg4grid{
   grid-template-columns: none;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 0.4fr 1fr;
 
 }
+#section{
+  padding: 6%;
+}
+.pag5bg{
+  grid-template-columns: none;
+  grid-template-rows: 1fr 1fr;
+
+
+}
+.pg8bg{
+  grid-template-columns: none;
+  grid-template-rows: repeat(4,1fr);
+  padding-top: 190px;
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 190vh;
+
+
+}
+.pg8bg>div{
+  margin: 0;
+  text-align: center;
+ 
+}
+.pg9bg{
+  grid-template-columns: none;
+  grid-template-rows: 0.6fr 1fr;
+  padding: 10%;
+  grid-row-gap:3% ;
+  background-position-x: center;
+}
+.p9img{
+  padding: 0;
+  grid-template-columns: none;
+  
+} 
+.p9img>.one{
+  grid-area: 1/1/1/1;
+}
+.pg9bg>.in{
+  padding: 0;
+}
+
 }
