@@ -309,3 +309,8 @@ body > .pg8bg  > div:nth-child(1) > h1{
     font-weight: 500;
     margin-bottom: 0;
     color: #ffbd31;}
+.girlimg{
+  background: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/becf5363e46752c7aa4a0601/billionphotos18572711.jpg) no-repeat;
+  background-size: cover;
+
+}
